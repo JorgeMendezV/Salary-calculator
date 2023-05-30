@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Salary Calculator </title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar-container">
+            <img src="./fin.png" alt="" class="logo">
+            <li>
+                <ul>
+                    <a href="#">Inicio</a>
+                </ul>
+                <ul>
+                    <a href="#">Deducciones</a>
+                </ul>
+                <ul>
+                    <a href="#">Sobre nosotros</a>
+                </ul>
+                <ul>
+                    <a href="#">Contactos</a>
+                </ul>
+            </li>
+        </nav>
+
+    </header>
+    <main>
+        <div class="main-page-info">
+            <h1>
+                El Salvador
+            </h1>
+            <p>
+                Mediante el ingreso de su salario en este formulario, usted puede realizar los cálculos necesarios para
+                obtener
+                datos como: ISSS patronal, AFP patronal, ISSS laboral, AFP laboral,
+                Renta Imponible, Impuesto sobre la Renta, Descuento Total y Salario Líquido.
+            </p>
+            <p>
+                Nota: Los cálculos están actualizados a la última reforma realizada por el Instituto Salvadoreño del
+                Seguro (ISSS),
+                en cuanto al techo máximo de cotización, que es de 1,000 dólares.
+            </p>
+
+            <!-- APARTADO - INGRESO SALARIO -->
+            <div class="salary-prompt-container">
+                <table>
+                    <tbody>
+                        <td> Enter your salary:</td>
+                        <td>
+                            <!--CAMPO TEXTBOX en el que se pide al usuario ingresar el salario, solo admite valores numéricos-->
+                            <input type="text" name="salary_value" id="salary_value" placeholder="$0.00 - Monthly"
+                                onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                            </input>
+                        </td>
+                        <td>
+                            <select name="salary-type" id="salary-type">
+                                <option selected="selected" value="t-salary-monthly">Monthly</option>
+                            </select>
+                        </td>
+                    </tbody>
+                </table>
+                <!--BOTONES PRINCIPALES-->
+                <button class="btn" type="submit" id="btnCalculate">Calculate</button>
+                <button class="btn" type="submit" id="btnClear">Clear</button>
+            </div>
+
+            <!--APARTADO - DEDUCCIONES -->
+            <div class="results-container">
+                <table>
+                    <thead>
+                        <th>
+                            Resultados de Cálculos
+                        </th>
+                    </thead>
+                    <tbody>
+                        <!--Campos deshabilitados, mostrarán información al usuario.-->
+                        <tr>
+                            <td> Cálculo de salario:</td>
+                            <td>
+                                <input type="text" name="input_month" id="input_month" placeholder="Monthly" disabled>
+                                </input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> AFP Patronal:</td>
+                            <td>
+                                <input type="text" name="patronal_AFP" id="patronal_AFP" placeholder="$0.00" disabled>
+                                </input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> ISSS Patronal:</td>
+                            <td>
+                                <input type="text" name="patronal_ISSS" id="patronal_ISSS" placeholder="$0.00" disabled>
+                                </input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> AFP Laboral:</td>
+                            <td>
+                                <input type="text" name="laboral_AFP" id="laboral_AFP" placeholder="$0.00" disabled>
+                                </input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> ISSS Laboral:</td>
+                            <td>
+                                <input type="text" name="laboral_ISSS" id="laboral_ISSS" placeholder="$0.00" disabled>
+                                </input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Salario(-) AFP:</td>
+                            <td>
+                                <input type="text" name="salary_AFP" id="salary_AFP" placeholder="$0.00" disabled>
+                                </input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Descuento total:</td>
+                            <td>
+                                <input type="text" name="v_discount" id="v_discount" placeholder="$0.00" disabled>
+                                </input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Impuesto sobre la Renta:</td>
+                            <td>
+                                <input type="text" name="v_renta" id="v_renta" placeholder="$0.00" disabled>
+                                </input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Salario Líquido:</td>
+                            <td>
+                                <input type="text" name="liquid_salary" id="liquid_salary" placeholder="$0.00" disabled>
+                                </input>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER MAIN CONTAINER-->
+    <footer class="footer">
+
+        <div class="redes-footer">
+
+            <p>Todos los derechos reservados ®
+                <br> Jorge Méndez
+            </p>
+
+            <img src="./images/facebook.png" alt="">
+            <img src="./images/linkedin.png" alt="">
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

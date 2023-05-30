@@ -1,0 +1,134 @@
+/*Selector universal*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1.4px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Navbar*/
+.navbar-container {
+    text-decoration: none;
+    position: relative;
+    padding: 20px;
+    color: rgba(171, 171, 171, 0.3);
+    height: 70px;
+}
+
+.navbar-container li {
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -40px;
+}
+
+.navbar-container ul,
+.navbar-container a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar-container a:hover {
+    color: rgba(165, 165, 165);
+}
+
+.logo {
+    width: 50px;
+    margin-top: -10px;
+}
+
+/*Tamaño de letra y estilo para contenido principal*/
+.main-page-info {
+    padding: 5% 20%;
+}
+
+.main-page-info p,
+td {
+    font-size: 20px;
+}
+
+.main-page-info h1,
+p {
+    margin-bottom: 20px;
+}
+
+/*Estilo para contenedores principales*/
+
+.salary-prompt-container select {
+    font-size: 20px;
+    margin: 10%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+input {
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.salary-prompt-container table {
+    margin: 10px;
+}
+
+.btn {
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(76, 76, 76);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+/*----- Apartado de resultados -----*/
+
+.results-container {
+    margin-top: 40px;
+}
+
+.results-container th {
+    font-size: 20px;
+    color: gray;
+}
+
+/*----FOOTER----*/
+
+.footer {
+    position: relative;
+    padding: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-footer {
+    display: flex;
+}
+
+
+.redes-footer img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
